@@ -1,0 +1,134 @@
+
+.founder-message {
+  width: 100%;
+  padding: 100px 6%;
+  background:
+    radial-gradient(
+      circle at 15% 50%,
+      rgba(237, 27, 47, 0.18),
+      transparent 40%
+    ),
+    linear-gradient(120deg, #100304, #31090e 55%, #100304);
+  overflow: hidden;
+}
+
+.founder-message-container {
+  max-width: 1350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.founder-image {
+  height: 540px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.founder-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.founder-content {
+  color: white;
+}
+
+.founder-label {
+  color: #ff5368;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.founder-quote-mark {
+  color: #ed1b2f;
+  font-family: Georgia, serif;
+  font-size: 100px;
+  line-height: 1;
+  height: 85px;
+  margin-top: 25px;
+}
+
+.founder-content h2 {
+  font-size: clamp(32px, 4vw, 50px);
+  line-height: 1.2;
+  font-weight: 750;
+  margin-bottom: 25px;
+}
+
+.founder-content h2 span {
+  color: #ff5368;
+}
+
+.founder-quote {
+  color: #d0c4c5;
+  font-size: 16px;
+  line-height: 1.9;
+  max-width: 650px;
+  border-left: 2px solid #ed1b2f;
+  padding-left: 22px;
+}
+
+.founder-details {
+  margin-top: 35px;
+}
+
+.founder-details h3 {
+  font-size: 21px;
+  margin-bottom: 7px;
+}
+
+.founder-details p {
+  color: #ff5368;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .founder-message {
+    padding: 65px 6%;
+  }
+
+  .founder-message-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .founder-image {
+    height: 420px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .founder-content h2 {
+    font-size: 34px;
+  }
+
+  .founder-quote {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .founder-image {
+    height: 350px;
+  }
+
+  .founder-content h2 {
+    font-size: 29px;
+  }
+
+  .founder-quote-mark {
+    font-size: 75px;
+    height: 65px;
+  }
+}

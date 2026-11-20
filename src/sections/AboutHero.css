@@ -1,0 +1,148 @@
+
+.about-hero {
+  position: relative;
+  min-height: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 85px 20px;
+  overflow: hidden;
+  background: #fff;
+  text-align: center;
+}
+
+.about-hero-glow {
+  position: absolute;
+  width: 750px;
+  height: 450px;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    ellipse,
+    rgba(255, 30, 45, 0.11),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1050px;
+  width: 100%;
+  margin: auto;
+}
+
+.about-hero-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  color: #ed172b;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+.about-hero-label span {
+  width: 65px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ff1e2d
+  );
+  position: relative;
+}
+
+.about-hero-label span:last-child {
+  transform: rotate(180deg);
+}
+
+.about-hero h1 {
+  color: #171315;
+  font-size: clamp(42px, 5.5vw, 68px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -2.5px;
+  margin: 0 0 25px;
+}
+
+.about-hero h1 span {
+  color: #ed172b;
+}
+
+.about-hero p {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #777;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.about-hero-tagline {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 16px 32px;
+  border-radius: 50px;
+  background: #ed172b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 8px 22px rgba(237, 23, 43, 0.2);
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .about-hero {
+    min-height: 440px;
+    padding: 75px 22px;
+  }
+
+  .about-hero h1 {
+    font-size: 43px;
+    letter-spacing: -1.5px;
+  }
+
+  .about-hero p {
+    font-size: 16px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .about-hero {
+    min-height: auto;
+    padding: 75px 20px 65px;
+  }
+
+  .about-hero-label {
+    font-size: 12px;
+    gap: 12px;
+    letter-spacing: 2px;
+  }
+
+  .about-hero-label span {
+    width: 35px;
+  }
+
+  .about-hero h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+  }
+
+  .about-hero p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .about-hero-tagline {
+    font-size: 12px;
+    padding: 14px 18px;
+    line-height: 1.5;
+    margin-top: 25px;
+  }
+}
